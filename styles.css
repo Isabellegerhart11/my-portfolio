@@ -1,35 +1,67 @@
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
 }
 
 /* Header */
 .header {
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
+
+/* Section Styling */
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #4e54c8;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: inside disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #4e54c8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Button */
 .resume-button {
   display: inline-block;
   margin-top: 15px;
@@ -46,47 +78,41 @@ body {
   background-color: #3a3fad;
 }
 
-
-/* Section Styling */
-section {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #4e54c8;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: inside disc;
-    padding-left: 20px;
-}
-
-a {
-    color: #4e54c8;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* Responsive Design */
 @media (max-width: 600px) {
-    .header h1 {
-        font-size: 2rem;
-    }
+  .header h1 {
+    font-size: 2rem;
+  }
 
-    .header p {
-        font-size: 1rem;
-    }
+  .header p {
+    font-size: 1rem;
+  }
 
-    section {
-        padding: 15px;
-    }
+  section {
+    padding: 15px;
+  }
 }
+
+/* Dark Mode Support */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #e4e4e4;
+}
+
+body.dark-mode section {
+  background: #2a2a2a;
+  box-shadow: none;
+}
+
+body.dark-mode a {
+  color: #84a9ff;
+}
+
+body.dark-mode .resume-button {
+  background-color: #6c70ff;
+}
+
+body.dark-mode .resume-button:hover {
+  background-color: #565bdb;
+}
+
