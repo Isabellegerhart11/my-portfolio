@@ -30,6 +30,22 @@ body {
     font-size: 1.2rem;
     margin-top: 10px;
 }
+.resume-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #4e54c8;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #3a3fad;
+}
+
 
 /* Section Styling */
 section {
